@@ -15,5 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: npm run compile-sass
+      - run: echo "🍏 This job's status is ${{ job.status }}.
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.0.2
+          
